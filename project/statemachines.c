@@ -28,7 +28,7 @@ void next_state(int state) {
     leds_off();
     break;
   case 3:
-    led_flash(3);
+    led_flash(2);
     leds_off();
     red_led_on();
     drawPyramids(30, 30);
@@ -36,7 +36,7 @@ void next_state(int state) {
     leds_off();
     break;
   case 4:
-    led_flash(3);
+    led_flash(1);
     leds_off();
     red_led_on();
     drawSpace(30, 30);
