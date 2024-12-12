@@ -11,6 +11,9 @@ void drawJoshuaTree(u_char colStart, u_char rowStart) {
 
   // Tree foliage
   fillRectangle(colStart, rowStart + 40, 30, 20, COLOR_GREEN);
+
+    drawString5x7(10, 10, "Joshua Tree", COLOR_BLACK, COLOR_YELLOW);
+
 }
 
 void drawRockyMountains(u_char colStart, u_char rowStart) {
@@ -33,6 +36,8 @@ void drawRockyMountains(u_char colStart, u_char rowStart) {
 
   // Grass background
   fillRectangle(0, rowStart + 40, screenWidth, grassHeight, COLOR_GREEN);
+  drawString5x7(10, 10, "Rocky Mountains", COLOR_BLACK, COLOR_SKY_BLUE);
+
 }
 
 void drawPyramids(u_char colStart, u_char rowStart) {
@@ -45,6 +50,8 @@ void drawPyramids(u_char colStart, u_char rowStart) {
       drawPixel(colStart + col, rowStart + row, COLOR_BROWN);
       drawPixel(colStart + 50 + col, rowStart + row + 20, COLOR_BROWN);
     }
+    drawString5x7(10, 10, "Pyramids", COLOR_BLACK, COLOR_YELLOW);
+
   }
 }
 
@@ -58,4 +65,6 @@ void drawSpace(u_char colStart, u_char rowStart) {
     u_char y = rowStart + (rand() % screenHeight);
     drawPixel(x, y, COLOR_WHITE);
   }
+  drawString5x7(10, 10, "Space", COLOR_WHITE, COLOR_BLACK);
+
 }
