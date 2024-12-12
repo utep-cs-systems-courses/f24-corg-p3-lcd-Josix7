@@ -12,7 +12,7 @@ void next_state(int state) {
   
   switch(state) {
   case 1:
-    led_flash(3);
+    led_flash(5);
     leds_off();
     red_led_on();
     drawJoshuaTree(30, 30);
